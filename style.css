@@ -1,0 +1,202 @@
+/* General styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #1c1c1c; /* Dark background */
+  color: #fff; /* Light text for contrast */
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 3% 0;
+  margin: 0% auto;
+  background-color: #111; /* Dark background for header */
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+  transition: transform 0.3s ease;
+  margin-top: 0%;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+header p a {
+  font-size: 1rem;
+  color: white;
+  margin: 0% auto;
+}
+header .btn:hover {
+  transform: scale(1.1);
+}
+/* Resume Section */
+.resume {
+  text-align: center;
+  margin: 2% auto;
+}
+.resume a {
+  margin: 0% 2%;
+}
+
+.resume .btn {
+  display: inline-block;
+  padding: 8px 18px;
+  background-color: #f44336; /* Red background for button */
+  color: white;
+  font-size: 1rem;
+  border-radius: 6%;
+  text-transform: uppercase;
+  border: none;
+}
+
+.resume .btn:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Tech Stack Section */
+.tech-stack {
+  background-color: #111; /* Dark background */
+  padding: 2% 0;
+}
+
+.tech-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 2% auto;
+}
+
+.tech-btn {
+  background-color: #708090;
+  color: white;
+  font-size: 0.9rem;
+  padding: 10px 15px;
+  border-radius: 6%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Projects Section (Project Bars) */
+.projects {
+  padding: 2% 0;
+  background-color: #1c1c1c; /* Same dark background for projects */
+}
+.projects h2 {
+  padding: 2%;
+}
+.projects p {
+  margin-bottom: 2%;
+  line-height: 1;
+  text-align: left;
+  padding: 0% 2%;
+}
+.project-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 1%;
+}
+
+.project-bar {
+  width: 80%;
+  background-color: #333; /* Darker background for bars */
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #fff;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-description {
+  font-size: 1rem;
+}
+
+.project-bar a {
+  font-size: 0.9rem;
+  color: #f44336;
+  text-align: left;
+}
+
+.project-bar a:hover {
+  color: #e53935;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p a {
+    font-size: 1rem;
+  }
+
+  .tech-btn {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+
+  .project-bar {
+    width: 90%;
+  }
+  .project-bars {
+    gap: 1rem;
+  }
+}
+/* Divider line styling */
+.divider {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #fff; /* White line */
+  margin: 0%;
+}
+.border-div {
+  border: 2px solid white;
+  margin: 20px; /* Space outside the div */
+  border-radius: 8px; /* Rounded corners (optional) */
+}
+.link-btn {
+  background-color: red;
+  margin: 0 1%;
+  border-radius: 6%;
+}
+.link-btn:hover {
+  transform: scale(1.1);
+  background-color: black;
+}

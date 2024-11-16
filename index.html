@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./pics/favicon-16x16.png" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- For SweetAlert2 for alerts -->
+  </head>
+  <body>
+    <div class="border-div">
+      <!-- Header Section: Avatar and Email -->
+      <header>
+        <div class="avatar-container">
+          <img src="./pics/picm.png" alt="Your Avatar" class="avatar" />
+        </div>
+        <p>My name: Aditya Raj</p>
+        <p>E-mail: adityaraj23300@gmail.com</p>
+        <section class="resume">
+          <a href="[your-resume-link]" class="btn link-btn" target="_blank"
+            >Resume</a
+          >
+          <a class="btn link-btn" href="mailto:adityaraj23300@gmail.com"
+            >Mail me</a
+          >
+        </section>
+      </header>
+
+      <hr class="divider" />
+      <!-- Tech Stack Overview Section -->
+      <section class="tech-stack">
+        <h2>Tech Stack</h2>
+        <div class="tech-cards">
+          <button class="tech-btn">HTML</button>
+          <button class="tech-btn">CSS</button>
+          <button class="tech-btn">JavaScript</button>
+          <button class="tech-btn">React</button>
+          <button class="tech-btn">Node.js</button>
+          <button class="tech-btn">Flutter</button>
+        </div>
+      </section>
+      <hr class="divider" />
+      <!-- Projects Section (Using Bars Instead of Cards) -->
+      <section class="projects">
+        <h2>My Projects</h2>
+        <p>
+          Imp note: <br />
+          The projects are hosted on a free tier plan , so it might take a
+          little longer(~50 seconds for the first time) to load the project for
+          the first time.
+        </p>
+        <div class="project-bars">
+          <div class="project-bar">
+            <span class="project-name">zapsolve.ai</span>
+            <span class="project-description"
+              >Frontend: HTML, CSS, JavaScript <br />
+              Backend: <br />
+              I. For Server: nodejs,expressjs,EJS<br />II. For Database:Firebase
+              cloudstore DB<br />
+              III. For authentication: google o-auth <br />
+              IV. APIs: Open-ai chat completion api
+            </span>
+            <div>
+              <button
+                onclick="location.href='https://github.com/aditya23300/zapsolve.ai';"
+                class="tech-btn link-btn"
+              >
+                Github
+              </button>
+              <button
+                onclick="location.href='https://zapsolve-ai.onrender.com';"
+                class="tech-btn link-btn"
+              >
+                Live-link
+              </button>
+            </div>
+          </div>
+          <div class="project-bar">
+            <span class="project-name">peaktide.ai</span>
+            <span class="project-description"
+              >Frontend: HTML, CSS, JavaScript <br />
+              Backend: <br />
+              I. For Server: nodejs,expressjs,EJS <br />II. For
+              Database:Firebase cloudstore DB<br />III. For storage: Firebase
+              storage <br />
+              IV. For authentication: Firebase auth<br />V. APIs: Google Gemini
+            </span>
+            <div>
+              <button
+                onclick="location.href='https://github.com/aditya23300/peaktide.ai';"
+                class="tech-btn link-btn"
+              >
+                Github
+              </button>
+              <button
+                onclick="location.href='https://peaktide-ai.onrender.com';"
+                class="tech-btn link-btn"
+              >
+                Live-link
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
